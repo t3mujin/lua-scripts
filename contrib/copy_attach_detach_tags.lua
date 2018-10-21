@@ -198,6 +198,19 @@ dt.register_lib("tagging_addon","Tagging addon",true,false,{
   )
 
 
+
+-- button for copy
+		dt.gui.libs.image.register_action(
+		"copy tags",
+		 mcopy_tags,
+		 _("copy metadata of the first selected image"))
+
+-- button for copy
+		dt.gui.libs.image.register_action(
+		"paste tags",
+		 attach_tags,
+		 _("paste metadata to the selected images"))
+
 -- shortcut for copy
 dt.register_event("shortcut",
                    mcopy_tags,
